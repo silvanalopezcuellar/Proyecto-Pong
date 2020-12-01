@@ -1,0 +1,1557 @@
+$comment
+	File created using the following command:
+		vcd file vga_sync.msim.vcd -direction
+$end
+$date
+	Sat Mar 23 15:45:02 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module vga_sync_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var wire 1 # h_video_on_out $end
+$var wire 1 $ hsync_out $end
+$var wire 1 % pixel [11] $end
+$var wire 1 & pixel [10] $end
+$var wire 1 ' pixel [9] $end
+$var wire 1 ( pixel [8] $end
+$var wire 1 ) pixel [7] $end
+$var wire 1 * pixel [6] $end
+$var wire 1 + pixel [5] $end
+$var wire 1 , pixel [4] $end
+$var wire 1 - pixel [3] $end
+$var wire 1 . pixel [2] $end
+$var wire 1 / pixel [1] $end
+$var wire 1 0 pixel [0] $end
+$var wire 1 1 v_video_on_out $end
+$var wire 1 2 vsync_out $end
+$var wire 1 3 sampler $end
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : horizontalBLK|BIST|Add0~6_combout $end
+$var wire 1 ; horizontalBLK|BIST|Add0~10_combout $end
+$var wire 1 < horizontalBLK|BIST2|Add0~2_combout $end
+$var wire 1 = horizontalBLK|BIST2|Add0~8_combout $end
+$var wire 1 > horizontalBLK|BIST2|Add0~10_combout $end
+$var wire 1 ? horizontalBLK|BIST2|Add0~18_combout $end
+$var wire 1 @ verticalBLK|BIST|Add0~0_combout $end
+$var wire 1 A verticalBLK|BIST|Add0~6_combout $end
+$var wire 1 B verticalBLK|BIST|Add0~10_combout $end
+$var wire 1 C verticalBLK|BIST|Add0~12_combout $end
+$var wire 1 D verticalBLK|BIST|Add0~14_combout $end
+$var wire 1 E verticalBLK|BIST2|Add0~23_combout $end
+$var wire 1 F verticalBLK|BIST2|Add0~25_combout $end
+$var wire 1 G verticalBLK|BIST2|Add0~33_combout $end
+$var wire 1 H verticalBLK|BIST3|Add0~21 $end
+$var wire 1 I verticalBLK|BIST3|Add0~22_combout $end
+$var wire 1 J verticalBLK|BIST3|Add0~23 $end
+$var wire 1 K verticalBLK|BIST3|Add0~24_combout $end
+$var wire 1 L verticalBLK|BIST3|Add0~25 $end
+$var wire 1 M verticalBLK|BIST3|Add0~26_combout $end
+$var wire 1 N verticalBLK|BIST3|Add0~27 $end
+$var wire 1 O verticalBLK|BIST3|Add0~30_combout $end
+$var wire 1 P verticalBLK|BIST4|Add0~4_combout $end
+$var wire 1 Q verticalBLK|BIST4|Add0~6_combout $end
+$var wire 1 R verticalBLK|BIST4|Add0~8_combout $end
+$var wire 1 S verticalBLK|BIST4|Add0~10_combout $end
+$var wire 1 T verticalBLK|BIST4|Add0~16_combout $end
+$var wire 1 U verticalBLK|BIST4|Add0~20_combout $end
+$var wire 1 V horizontalBLK|BIST3|Add0~10_combout $end
+$var wire 1 W horizontalBLK|BIST4|Add0~10_combout $end
+$var wire 1 X verticalBLK|BIST|Equal0~2_combout $end
+$var wire 1 Y verticalBLK|BIST2|Equal0~2_combout $end
+$var wire 1 Z verticalBLK|BIST3|Equal0~0_combout $end
+$var wire 1 [ verticalBLK|BIST4|Equal0~2_combout $end
+$var wire 1 \ horizontalBLK|BIST|Add0~15_combout $end
+$var wire 1 ] horizontalBLK|BIST|Add0~21_combout $end
+$var wire 1 ^ horizontalBLK|BIST2|Add0~30_combout $end
+$var wire 1 _ verticalBLK|BIST|Add0~43_combout $end
+$var wire 1 ` verticalBLK|BIST|Add0~44_combout $end
+$var wire 1 a verticalBLK|BIST|Add0~45_combout $end
+$var wire 1 b verticalBLK|BIST|Add0~47_combout $end
+$var wire 1 c verticalBLK|BIST|Add0~50_combout $end
+$var wire 1 d verticalBLK|BIST2|Add0~52_combout $end
+$var wire 1 e verticalBLK|BIST2|Add0~53_combout $end
+$var wire 1 f verticalBLK|BIST2|Add0~55_combout $end
+$var wire 1 g verticalBLK|BIST3|Add0~28_combout $end
+$var wire 1 h verticalBLK|BIST3|Add0~29_combout $end
+$var wire 1 i verticalBLK|BIST3|Add0~32_combout $end
+$var wire 1 j verticalBLK|BIST3|Add0~33_combout $end
+$var wire 1 k verticalBLK|BIST4|Add0~29_combout $end
+$var wire 1 l verticalBLK|BIST4|Add0~31_combout $end
+$var wire 1 m verticalBLK|BIST4|Add0~34_combout $end
+$var wire 1 n verticalBLK|BIST4|Add0~35_combout $end
+$var wire 1 o verticalBLK|BIST4|Add0~36_combout $end
+$var wire 1 p verticalBLK|BIST4|Add0~37_combout $end
+$var wire 1 q horizontalBLK|BIST3|Add0~12_combout $end
+$var wire 1 r horizontalBLK|BIST4|Add0~22_combout $end
+$var wire 1 s pixel[0]~output_o $end
+$var wire 1 t pixel[1]~output_o $end
+$var wire 1 u pixel[2]~output_o $end
+$var wire 1 v pixel[3]~output_o $end
+$var wire 1 w pixel[4]~output_o $end
+$var wire 1 x pixel[5]~output_o $end
+$var wire 1 y pixel[6]~output_o $end
+$var wire 1 z pixel[7]~output_o $end
+$var wire 1 { pixel[8]~output_o $end
+$var wire 1 | pixel[9]~output_o $end
+$var wire 1 } pixel[10]~output_o $end
+$var wire 1 ~ pixel[11]~output_o $end
+$var wire 1 !! h_video_on_out~output_o $end
+$var wire 1 "! v_video_on_out~output_o $end
+$var wire 1 #! vsync_out~output_o $end
+$var wire 1 $! hsync_out~output_o $end
+$var wire 1 %! clk~input_o $end
+$var wire 1 &! clk~inputclkctrl_outclk $end
+$var wire 1 '! horizontalBLK|DUT|Selector2~0_combout $end
+$var wire 1 (! rst~input_o $end
+$var wire 1 )! horizontalBLK|DUT|pr_state.tres~q $end
+$var wire 1 *! horizontalBLK|BIST3|Add0~0_combout $end
+$var wire 1 +! horizontalBLK|BIST3|Add0~13_combout $end
+$var wire 1 ,! horizontalBLK|BIST3|Add0~1 $end
+$var wire 1 -! horizontalBLK|BIST3|Add0~2_combout $end
+$var wire 1 .! horizontalBLK|BIST3|Add0~20_combout $end
+$var wire 1 /! horizontalBLK|BIST3|Add0~3 $end
+$var wire 1 0! horizontalBLK|BIST3|Add0~4_combout $end
+$var wire 1 1! horizontalBLK|BIST3|Add0~19_combout $end
+$var wire 1 2! horizontalBLK|BIST3|Add0~5 $end
+$var wire 1 3! horizontalBLK|BIST3|Add0~6_combout $end
+$var wire 1 4! horizontalBLK|BIST3|Add0~18_combout $end
+$var wire 1 5! horizontalBLK|BIST3|Add0~7 $end
+$var wire 1 6! horizontalBLK|BIST3|Add0~8_combout $end
+$var wire 1 7! horizontalBLK|BIST3|Add0~17_combout $end
+$var wire 1 8! horizontalBLK|BIST3|Add0~9 $end
+$var wire 1 9! horizontalBLK|BIST3|Add0~11 $end
+$var wire 1 :! horizontalBLK|BIST3|Add0~14_combout $end
+$var wire 1 ;! horizontalBLK|BIST3|Add0~16_combout $end
+$var wire 1 <! horizontalBLK|BIST3|Equal0~0_combout $end
+$var wire 1 =! horizontalBLK|BIST3|Equal0~1_combout $end
+$var wire 1 >! horizontalBLK|DUT|Selector3~0_combout $end
+$var wire 1 ?! horizontalBLK|DUT|pr_state.cuatro~q $end
+$var wire 1 @! horizontalBLK|BIST4|Add0~0_combout $end
+$var wire 1 A! horizontalBLK|BIST4|Add0~18_combout $end
+$var wire 1 B! horizontalBLK|BIST4|Add0~1 $end
+$var wire 1 C! horizontalBLK|BIST4|Add0~2_combout $end
+$var wire 1 D! horizontalBLK|BIST4|Add0~26_combout $end
+$var wire 1 E! horizontalBLK|BIST4|Add0~3 $end
+$var wire 1 F! horizontalBLK|BIST4|Add0~4_combout $end
+$var wire 1 G! horizontalBLK|BIST4|Add0~25_combout $end
+$var wire 1 H! horizontalBLK|BIST4|Add0~5 $end
+$var wire 1 I! horizontalBLK|BIST4|Add0~6_combout $end
+$var wire 1 J! horizontalBLK|BIST4|Add0~24_combout $end
+$var wire 1 K! horizontalBLK|BIST4|Add0~7 $end
+$var wire 1 L! horizontalBLK|BIST4|Add0~8_combout $end
+$var wire 1 M! horizontalBLK|BIST4|Add0~23_combout $end
+$var wire 1 N! horizontalBLK|BIST4|Equal0~1_combout $end
+$var wire 1 O! horizontalBLK|BIST4|Add0~9 $end
+$var wire 1 P! horizontalBLK|BIST4|Add0~11 $end
+$var wire 1 Q! horizontalBLK|BIST4|Add0~12_combout $end
+$var wire 1 R! horizontalBLK|BIST4|Add0~17_combout $end
+$var wire 1 S! horizontalBLK|BIST4|Add0~13 $end
+$var wire 1 T! horizontalBLK|BIST4|Add0~14_combout $end
+$var wire 1 U! horizontalBLK|BIST4|Add0~16_combout $end
+$var wire 1 V! horizontalBLK|BIST4|Add0~15 $end
+$var wire 1 W! horizontalBLK|BIST4|Add0~19_combout $end
+$var wire 1 X! horizontalBLK|BIST4|Add0~21_combout $end
+$var wire 1 Y! horizontalBLK|BIST4|Equal0~0_combout $end
+$var wire 1 Z! horizontalBLK|BIST4|Equal0~2_combout $end
+$var wire 1 [! horizontalBLK|DUT|Selector0~0_combout $end
+$var wire 1 \! horizontalBLK|DUT|pr_state.uno~q $end
+$var wire 1 ]! horizontalBLK|BIST|Add0~1 $end
+$var wire 1 ^! horizontalBLK|BIST|Add0~3 $end
+$var wire 1 _! horizontalBLK|BIST|Add0~5 $end
+$var wire 1 `! horizontalBLK|BIST|Add0~7 $end
+$var wire 1 a! horizontalBLK|BIST|Add0~9 $end
+$var wire 1 b! horizontalBLK|BIST|Add0~11 $end
+$var wire 1 c! horizontalBLK|BIST|Add0~12_combout $end
+$var wire 1 d! horizontalBLK|BIST|Add0~14_combout $end
+$var wire 1 e! horizontalBLK|BIST|Add0~13 $end
+$var wire 1 f! horizontalBLK|BIST|Add0~17_combout $end
+$var wire 1 g! horizontalBLK|BIST|Add0~19_combout $end
+$var wire 1 h! horizontalBLK|BIST|Add0~0_combout $end
+$var wire 1 i! horizontalBLK|BIST|Add0~16_combout $end
+$var wire 1 j! horizontalBLK|BIST|Equal0~0_combout $end
+$var wire 1 k! horizontalBLK|BIST|Add0~8_combout $end
+$var wire 1 l! horizontalBLK|BIST|Add0~20_combout $end
+$var wire 1 m! horizontalBLK|BIST|Add0~4_combout $end
+$var wire 1 n! horizontalBLK|BIST|Add0~22_combout $end
+$var wire 1 o! horizontalBLK|BIST|Add0~2_combout $end
+$var wire 1 p! horizontalBLK|BIST|Add0~23_combout $end
+$var wire 1 q! horizontalBLK|BIST|Equal0~1_combout $end
+$var wire 1 r! horizontalBLK|BIST|Equal0~2_combout $end
+$var wire 1 s! horizontalBLK|DUT|Selector1~0_combout $end
+$var wire 1 t! horizontalBLK|DUT|pr_state.dos~q $end
+$var wire 1 u! horizontalBLK|BIST2|Add0~33_combout $end
+$var wire 1 v! horizontalBLK|BIST2|Add0~1 $end
+$var wire 1 w! horizontalBLK|BIST2|Add0~3 $end
+$var wire 1 x! horizontalBLK|BIST2|Add0~5 $end
+$var wire 1 y! horizontalBLK|BIST2|Add0~7 $end
+$var wire 1 z! horizontalBLK|BIST2|Add0~9 $end
+$var wire 1 {! horizontalBLK|BIST2|Add0~11 $end
+$var wire 1 |! horizontalBLK|BIST2|Add0~12_combout $end
+$var wire 1 }! horizontalBLK|BIST2|Add0~32_combout $end
+$var wire 1 ~! horizontalBLK|BIST2|Add0~13 $end
+$var wire 1 !" horizontalBLK|BIST2|Add0~15 $end
+$var wire 1 "" horizontalBLK|BIST2|Add0~17 $end
+$var wire 1 #" horizontalBLK|BIST2|Add0~19 $end
+$var wire 1 $" horizontalBLK|BIST2|Add0~20_combout $end
+$var wire 1 %" horizontalBLK|BIST2|Add0~28_combout $end
+$var wire 1 &" horizontalBLK|BIST2|Add0~14_combout $end
+$var wire 1 '" horizontalBLK|BIST2|Add0~31_combout $end
+$var wire 1 (" horizontalBLK|BIST2|Add0~16_combout $end
+$var wire 1 )" horizontalBLK|BIST2|Add0~29_combout $end
+$var wire 1 *" horizontalBLK|BIST2|Equal0~1_combout $end
+$var wire 1 +" horizontalBLK|BIST2|Add0~34_combout $end
+$var wire 1 ," horizontalBLK|BIST2|Equal0~2_combout $end
+$var wire 1 -" horizontalBLK|BIST2|Add0~21 $end
+$var wire 1 ." horizontalBLK|BIST2|Add0~22_combout $end
+$var wire 1 /" horizontalBLK|BIST2|Add0~24_combout $end
+$var wire 1 0" horizontalBLK|BIST2|Add0~4_combout $end
+$var wire 1 1" horizontalBLK|BIST2|Add0~27_combout $end
+$var wire 1 2" horizontalBLK|BIST2|Equal0~0_combout $end
+$var wire 1 3" horizontalBLK|BIST2|Equal0~3_combout $end
+$var wire 1 4" horizontalBLK|BIST2|Add0~0_combout $end
+$var wire 1 5" horizontalBLK|BIST2|Add0~26_combout $end
+$var wire 1 6" horizontalBLK|BIST2|Add0~25_combout $end
+$var wire 1 7" controlDibujoBLK|combinational~0_combout $end
+$var wire 1 8" verticalBLK|BIST|Add0~1 $end
+$var wire 1 9" verticalBLK|BIST|Add0~3 $end
+$var wire 1 :" verticalBLK|BIST|Add0~4_combout $end
+$var wire 1 ;" verticalBLK|BIST2|Add0~0_combout $end
+$var wire 1 <" verticalBLK|BIST2|Add0~42_combout $end
+$var wire 1 =" verticalBLK|BIST2|Add0~1 $end
+$var wire 1 >" verticalBLK|BIST2|Add0~2_combout $end
+$var wire 1 ?" verticalBLK|BIST2|Add0~49_combout $end
+$var wire 1 @" verticalBLK|BIST2|Add0~3 $end
+$var wire 1 A" verticalBLK|BIST2|Add0~4_combout $end
+$var wire 1 B" verticalBLK|BIST2|Add0~54_combout $end
+$var wire 1 C" verticalBLK|BIST2|Add0~5 $end
+$var wire 1 D" verticalBLK|BIST2|Add0~6_combout $end
+$var wire 1 E" verticalBLK|BIST2|Add0~8_combout $end
+$var wire 1 F" verticalBLK|BIST2|Add0~7 $end
+$var wire 1 G" verticalBLK|BIST2|Add0~9_combout $end
+$var wire 1 H" verticalBLK|BIST2|Add0~48_combout $end
+$var wire 1 I" verticalBLK|BIST2|Equal0~1_combout $end
+$var wire 1 J" verticalBLK|BIST2|Add0~10 $end
+$var wire 1 K" verticalBLK|BIST2|Add0~12 $end
+$var wire 1 L" verticalBLK|BIST2|Add0~13_combout $end
+$var wire 1 M" verticalBLK|BIST2|Add0~46_combout $end
+$var wire 1 N" verticalBLK|BIST2|Add0~14 $end
+$var wire 1 O" verticalBLK|BIST2|Add0~15_combout $end
+$var wire 1 P" verticalBLK|BIST2|Add0~62_combout $end
+$var wire 1 Q" verticalBLK|BIST2|Add0~16 $end
+$var wire 1 R" verticalBLK|BIST2|Add0~17_combout $end
+$var wire 1 S" verticalBLK|BIST2|Add0~61_combout $end
+$var wire 1 T" verticalBLK|BIST2|Add0~18 $end
+$var wire 1 U" verticalBLK|BIST2|Add0~19_combout $end
+$var wire 1 V" verticalBLK|BIST2|Add0~60_combout $end
+$var wire 1 W" verticalBLK|BIST2|Add0~20 $end
+$var wire 1 X" verticalBLK|BIST2|Add0~22 $end
+$var wire 1 Y" verticalBLK|BIST2|Add0~24 $end
+$var wire 1 Z" verticalBLK|BIST2|Add0~26 $end
+$var wire 1 [" verticalBLK|BIST2|Add0~27_combout $end
+$var wire 1 \" verticalBLK|BIST2|Add0~51_combout $end
+$var wire 1 ]" verticalBLK|BIST2|Add0~28 $end
+$var wire 1 ^" verticalBLK|BIST2|Add0~29_combout $end
+$var wire 1 _" verticalBLK|BIST2|Add0~50_combout $end
+$var wire 1 `" verticalBLK|BIST2|Add0~30 $end
+$var wire 1 a" verticalBLK|BIST2|Add0~32 $end
+$var wire 1 b" verticalBLK|BIST2|Add0~34 $end
+$var wire 1 c" verticalBLK|BIST2|Add0~36 $end
+$var wire 1 d" verticalBLK|BIST2|Add0~38 $end
+$var wire 1 e" verticalBLK|BIST2|Add0~39_combout $end
+$var wire 1 f" verticalBLK|BIST2|Add0~41_combout $end
+$var wire 1 g" verticalBLK|BIST2|Add0~40 $end
+$var wire 1 h" verticalBLK|BIST2|Add0~43_combout $end
+$var wire 1 i" verticalBLK|BIST2|Add0~45_combout $end
+$var wire 1 j" verticalBLK|BIST2|Equal0~0_combout $end
+$var wire 1 k" verticalBLK|BIST2|Add0~21_combout $end
+$var wire 1 l" verticalBLK|BIST2|Add0~59_combout $end
+$var wire 1 m" verticalBLK|BIST2|Equal0~4_combout $end
+$var wire 1 n" verticalBLK|BIST2|Add0~37_combout $end
+$var wire 1 o" verticalBLK|BIST2|Add0~56_combout $end
+$var wire 1 p" verticalBLK|BIST2|Add0~35_combout $end
+$var wire 1 q" verticalBLK|BIST2|Add0~57_combout $end
+$var wire 1 r" verticalBLK|BIST2|Add0~31_combout $end
+$var wire 1 s" verticalBLK|BIST2|Add0~58_combout $end
+$var wire 1 t" verticalBLK|BIST2|Equal0~3_combout $end
+$var wire 1 u" verticalBLK|BIST2|Equal0~5_combout $end
+$var wire 1 v" verticalBLK|BIST2|Equal0~6_combout $end
+$var wire 1 w" verticalBLK|DUT|Selector2~0_combout $end
+$var wire 1 x" verticalBLK|DUT|pr_state.tres~q $end
+$var wire 1 y" verticalBLK|BIST3|Add0~0_combout $end
+$var wire 1 z" verticalBLK|BIST3|Add0~44_combout $end
+$var wire 1 {" verticalBLK|BIST3|Add0~1 $end
+$var wire 1 |" verticalBLK|BIST3|Add0~2_combout $end
+$var wire 1 }" verticalBLK|BIST3|Add0~43_combout $end
+$var wire 1 ~" verticalBLK|BIST3|Add0~3 $end
+$var wire 1 !# verticalBLK|BIST3|Add0~4_combout $end
+$var wire 1 "# verticalBLK|BIST3|Add0~42_combout $end
+$var wire 1 ## verticalBLK|BIST3|Add0~5 $end
+$var wire 1 $# verticalBLK|BIST3|Add0~6_combout $end
+$var wire 1 %# verticalBLK|BIST3|Add0~41_combout $end
+$var wire 1 &# verticalBLK|BIST3|Add0~7 $end
+$var wire 1 '# verticalBLK|BIST3|Add0~8_combout $end
+$var wire 1 (# verticalBLK|BIST3|Add0~40_combout $end
+$var wire 1 )# verticalBLK|BIST3|Add0~9 $end
+$var wire 1 *# verticalBLK|BIST3|Add0~10_combout $end
+$var wire 1 +# verticalBLK|BIST3|Add0~39_combout $end
+$var wire 1 ,# verticalBLK|BIST3|Add0~11 $end
+$var wire 1 -# verticalBLK|BIST3|Add0~12_combout $end
+$var wire 1 .# verticalBLK|BIST3|Add0~38_combout $end
+$var wire 1 /# verticalBLK|BIST3|Add0~13 $end
+$var wire 1 0# verticalBLK|BIST3|Add0~14_combout $end
+$var wire 1 1# verticalBLK|BIST3|Add0~37_combout $end
+$var wire 1 2# verticalBLK|BIST3|Add0~15 $end
+$var wire 1 3# verticalBLK|BIST3|Add0~16_combout $end
+$var wire 1 4# verticalBLK|BIST3|Add0~36_combout $end
+$var wire 1 5# verticalBLK|BIST3|Add0~17 $end
+$var wire 1 6# verticalBLK|BIST3|Add0~18_combout $end
+$var wire 1 7# verticalBLK|BIST3|Add0~34_combout $end
+$var wire 1 8# verticalBLK|BIST3|Add0~19 $end
+$var wire 1 9# verticalBLK|BIST3|Add0~20_combout $end
+$var wire 1 :# verticalBLK|BIST3|Add0~35_combout $end
+$var wire 1 ;# verticalBLK|BIST3|Equal0~1_combout $end
+$var wire 1 <# verticalBLK|BIST3|Equal0~3_combout $end
+$var wire 1 =# verticalBLK|BIST3|Equal0~2_combout $end
+$var wire 1 ># verticalBLK|BIST3|Equal0~4_combout $end
+$var wire 1 ?# verticalBLK|DUT|Selector3~0_combout $end
+$var wire 1 @# verticalBLK|DUT|pr_state.cuatro~q $end
+$var wire 1 A# verticalBLK|BIST4|Add0~1 $end
+$var wire 1 B# verticalBLK|BIST4|Add0~2_combout $end
+$var wire 1 C# verticalBLK|BIST4|Add0~38_combout $end
+$var wire 1 D# verticalBLK|BIST4|Add0~3 $end
+$var wire 1 E# verticalBLK|BIST4|Add0~5 $end
+$var wire 1 F# verticalBLK|BIST4|Add0~7 $end
+$var wire 1 G# verticalBLK|BIST4|Add0~9 $end
+$var wire 1 H# verticalBLK|BIST4|Add0~11 $end
+$var wire 1 I# verticalBLK|BIST4|Add0~13 $end
+$var wire 1 J# verticalBLK|BIST4|Add0~15 $end
+$var wire 1 K# verticalBLK|BIST4|Add0~17 $end
+$var wire 1 L# verticalBLK|BIST4|Add0~18_combout $end
+$var wire 1 M# verticalBLK|BIST4|Add0~30_combout $end
+$var wire 1 N# verticalBLK|BIST4|Add0~19 $end
+$var wire 1 O# verticalBLK|BIST4|Add0~21 $end
+$var wire 1 P# verticalBLK|BIST4|Add0~22_combout $end
+$var wire 1 Q# verticalBLK|BIST4|Add0~24_combout $end
+$var wire 1 R# verticalBLK|BIST4|Add0~23 $end
+$var wire 1 S# verticalBLK|BIST4|Add0~26_combout $end
+$var wire 1 T# verticalBLK|BIST4|Add0~28_combout $end
+$var wire 1 U# verticalBLK|BIST4|Add0~0_combout $end
+$var wire 1 V# verticalBLK|BIST4|Add0~25_combout $end
+$var wire 1 W# verticalBLK|BIST4|Equal0~0_combout $end
+$var wire 1 X# verticalBLK|BIST4|Add0~12_combout $end
+$var wire 1 Y# verticalBLK|BIST4|Add0~33_combout $end
+$var wire 1 Z# verticalBLK|BIST4|Add0~14_combout $end
+$var wire 1 [# verticalBLK|BIST4|Add0~32_combout $end
+$var wire 1 \# verticalBLK|BIST4|Equal0~1_combout $end
+$var wire 1 ]# verticalBLK|BIST4|Equal0~3_combout $end
+$var wire 1 ^# verticalBLK|DUT|Selector0~0_combout $end
+$var wire 1 _# verticalBLK|DUT|pr_state.uno~q $end
+$var wire 1 `# verticalBLK|BIST|Add0~48_combout $end
+$var wire 1 a# verticalBLK|BIST|Add0~2_combout $end
+$var wire 1 b# verticalBLK|BIST|Add0~49_combout $end
+$var wire 1 c# verticalBLK|BIST|Add0~5 $end
+$var wire 1 d# verticalBLK|BIST|Add0~7 $end
+$var wire 1 e# verticalBLK|BIST|Add0~8_combout $end
+$var wire 1 f# verticalBLK|BIST|Add0~46_combout $end
+$var wire 1 g# verticalBLK|BIST|Equal0~3_combout $end
+$var wire 1 h# verticalBLK|BIST|Add0~9 $end
+$var wire 1 i# verticalBLK|BIST|Add0~11 $end
+$var wire 1 j# verticalBLK|BIST|Add0~13 $end
+$var wire 1 k# verticalBLK|BIST|Add0~15 $end
+$var wire 1 l# verticalBLK|BIST|Add0~16_combout $end
+$var wire 1 m# verticalBLK|BIST|Add0~42_combout $end
+$var wire 1 n# verticalBLK|BIST|Add0~17 $end
+$var wire 1 o# verticalBLK|BIST|Add0~18_combout $end
+$var wire 1 p# verticalBLK|BIST|Add0~41_combout $end
+$var wire 1 q# verticalBLK|BIST|Add0~19 $end
+$var wire 1 r# verticalBLK|BIST|Add0~21 $end
+$var wire 1 s# verticalBLK|BIST|Add0~22_combout $end
+$var wire 1 t# verticalBLK|BIST|Add0~40_combout $end
+$var wire 1 u# verticalBLK|BIST|Add0~23 $end
+$var wire 1 v# verticalBLK|BIST|Add0~24_combout $end
+$var wire 1 w# verticalBLK|BIST|Add0~39_combout $end
+$var wire 1 x# verticalBLK|BIST|Add0~25 $end
+$var wire 1 y# verticalBLK|BIST|Add0~26_combout $end
+$var wire 1 z# verticalBLK|BIST|Add0~33_combout $end
+$var wire 1 {# verticalBLK|BIST|Add0~27 $end
+$var wire 1 |# verticalBLK|BIST|Add0~28_combout $end
+$var wire 1 }# verticalBLK|BIST|Add0~37_combout $end
+$var wire 1 ~# verticalBLK|BIST|Add0~29 $end
+$var wire 1 !$ verticalBLK|BIST|Add0~31 $end
+$var wire 1 "$ verticalBLK|BIST|Add0~34_combout $end
+$var wire 1 #$ verticalBLK|BIST|Add0~36_combout $end
+$var wire 1 $$ verticalBLK|BIST|Add0~30_combout $end
+$var wire 1 %$ verticalBLK|BIST|Add0~32_combout $end
+$var wire 1 &$ verticalBLK|BIST|Equal0~0_combout $end
+$var wire 1 '$ verticalBLK|BIST|Add0~20_combout $end
+$var wire 1 ($ verticalBLK|BIST|Add0~38_combout $end
+$var wire 1 )$ verticalBLK|BIST|Equal0~1_combout $end
+$var wire 1 *$ verticalBLK|BIST|Equal0~4_combout $end
+$var wire 1 +$ verticalBLK|BIST|Equal0~5_combout $end
+$var wire 1 ,$ verticalBLK|DUT|Selector1~0_combout $end
+$var wire 1 -$ verticalBLK|DUT|pr_state.dos~q $end
+$var wire 1 .$ verticalBLK|BIST2|Add0~11_combout $end
+$var wire 1 /$ verticalBLK|BIST2|Add0~47_combout $end
+$var wire 1 0$ controlDibujoBLK|nx_state~3_combout $end
+$var wire 1 1$ controlDibujoBLK|nx_state~2_combout $end
+$var wire 1 2$ horizontalBLK|BIST2|Add0~6_combout $end
+$var wire 1 3$ horizontalBLK|BIST2|Add0~35_combout $end
+$var wire 1 4$ controlDibujoBLK|nx_state~1_combout $end
+$var wire 1 5$ controlDibujoBLK|nx_state~4_combout $end
+$var wire 1 6$ controlDibujoBLK|nx_state~6_combout $end
+$var wire 1 7$ controlDibujoBLK|combinational~1_combout $end
+$var wire 1 8$ controlDibujoBLK|combinational~2_combout $end
+$var wire 1 9$ controlDibujoBLK|nx_state~0_combout $end
+$var wire 1 :$ controlDibujoBLK|nx_state~5_combout $end
+$var wire 1 ;$ controlDibujoBLK|nx_state~combout $end
+$var wire 1 <$ controlDibujoBLK|pr_state~q $end
+$var wire 1 =$ verticalBLK|BIST|temp [16] $end
+$var wire 1 >$ verticalBLK|BIST|temp [15] $end
+$var wire 1 ?$ verticalBLK|BIST|temp [14] $end
+$var wire 1 @$ verticalBLK|BIST|temp [13] $end
+$var wire 1 A$ verticalBLK|BIST|temp [12] $end
+$var wire 1 B$ verticalBLK|BIST|temp [11] $end
+$var wire 1 C$ verticalBLK|BIST|temp [10] $end
+$var wire 1 D$ verticalBLK|BIST|temp [9] $end
+$var wire 1 E$ verticalBLK|BIST|temp [8] $end
+$var wire 1 F$ verticalBLK|BIST|temp [7] $end
+$var wire 1 G$ verticalBLK|BIST|temp [6] $end
+$var wire 1 H$ verticalBLK|BIST|temp [5] $end
+$var wire 1 I$ verticalBLK|BIST|temp [4] $end
+$var wire 1 J$ verticalBLK|BIST|temp [3] $end
+$var wire 1 K$ verticalBLK|BIST|temp [2] $end
+$var wire 1 L$ verticalBLK|BIST|temp [1] $end
+$var wire 1 M$ verticalBLK|BIST|temp [0] $end
+$var wire 1 N$ verticalBLK|BIST2|temp [20] $end
+$var wire 1 O$ verticalBLK|BIST2|temp [19] $end
+$var wire 1 P$ verticalBLK|BIST2|temp [18] $end
+$var wire 1 Q$ verticalBLK|BIST2|temp [17] $end
+$var wire 1 R$ verticalBLK|BIST2|temp [16] $end
+$var wire 1 S$ verticalBLK|BIST2|temp [15] $end
+$var wire 1 T$ verticalBLK|BIST2|temp [14] $end
+$var wire 1 U$ verticalBLK|BIST2|temp [13] $end
+$var wire 1 V$ verticalBLK|BIST2|temp [12] $end
+$var wire 1 W$ verticalBLK|BIST2|temp [11] $end
+$var wire 1 X$ verticalBLK|BIST2|temp [10] $end
+$var wire 1 Y$ verticalBLK|BIST2|temp [9] $end
+$var wire 1 Z$ verticalBLK|BIST2|temp [8] $end
+$var wire 1 [$ verticalBLK|BIST2|temp [7] $end
+$var wire 1 \$ verticalBLK|BIST2|temp [6] $end
+$var wire 1 ]$ verticalBLK|BIST2|temp [5] $end
+$var wire 1 ^$ verticalBLK|BIST2|temp [4] $end
+$var wire 1 _$ verticalBLK|BIST2|temp [3] $end
+$var wire 1 `$ verticalBLK|BIST2|temp [2] $end
+$var wire 1 a$ verticalBLK|BIST2|temp [1] $end
+$var wire 1 b$ verticalBLK|BIST2|temp [0] $end
+$var wire 1 c$ verticalBLK|BIST3|temp [14] $end
+$var wire 1 d$ verticalBLK|BIST3|temp [13] $end
+$var wire 1 e$ verticalBLK|BIST3|temp [12] $end
+$var wire 1 f$ verticalBLK|BIST3|temp [11] $end
+$var wire 1 g$ verticalBLK|BIST3|temp [10] $end
+$var wire 1 h$ verticalBLK|BIST3|temp [9] $end
+$var wire 1 i$ verticalBLK|BIST3|temp [8] $end
+$var wire 1 j$ verticalBLK|BIST3|temp [7] $end
+$var wire 1 k$ verticalBLK|BIST3|temp [6] $end
+$var wire 1 l$ verticalBLK|BIST3|temp [5] $end
+$var wire 1 m$ verticalBLK|BIST3|temp [4] $end
+$var wire 1 n$ verticalBLK|BIST3|temp [3] $end
+$var wire 1 o$ verticalBLK|BIST3|temp [2] $end
+$var wire 1 p$ verticalBLK|BIST3|temp [1] $end
+$var wire 1 q$ verticalBLK|BIST3|temp [0] $end
+$var wire 1 r$ verticalBLK|BIST4|temp [12] $end
+$var wire 1 s$ verticalBLK|BIST4|temp [11] $end
+$var wire 1 t$ verticalBLK|BIST4|temp [10] $end
+$var wire 1 u$ verticalBLK|BIST4|temp [9] $end
+$var wire 1 v$ verticalBLK|BIST4|temp [8] $end
+$var wire 1 w$ verticalBLK|BIST4|temp [7] $end
+$var wire 1 x$ verticalBLK|BIST4|temp [6] $end
+$var wire 1 y$ verticalBLK|BIST4|temp [5] $end
+$var wire 1 z$ verticalBLK|BIST4|temp [4] $end
+$var wire 1 {$ verticalBLK|BIST4|temp [3] $end
+$var wire 1 |$ verticalBLK|BIST4|temp [2] $end
+$var wire 1 }$ verticalBLK|BIST4|temp [1] $end
+$var wire 1 ~$ verticalBLK|BIST4|temp [0] $end
+$var wire 1 !% horizontalBLK|BIST|temp [7] $end
+$var wire 1 "% horizontalBLK|BIST|temp [6] $end
+$var wire 1 #% horizontalBLK|BIST|temp [5] $end
+$var wire 1 $% horizontalBLK|BIST|temp [4] $end
+$var wire 1 %% horizontalBLK|BIST|temp [3] $end
+$var wire 1 &% horizontalBLK|BIST|temp [2] $end
+$var wire 1 '% horizontalBLK|BIST|temp [1] $end
+$var wire 1 (% horizontalBLK|BIST|temp [0] $end
+$var wire 1 )% horizontalBLK|BIST2|temp [11] $end
+$var wire 1 *% horizontalBLK|BIST2|temp [10] $end
+$var wire 1 +% horizontalBLK|BIST2|temp [9] $end
+$var wire 1 ,% horizontalBLK|BIST2|temp [8] $end
+$var wire 1 -% horizontalBLK|BIST2|temp [7] $end
+$var wire 1 .% horizontalBLK|BIST2|temp [6] $end
+$var wire 1 /% horizontalBLK|BIST2|temp [5] $end
+$var wire 1 0% horizontalBLK|BIST2|temp [4] $end
+$var wire 1 1% horizontalBLK|BIST2|temp [3] $end
+$var wire 1 2% horizontalBLK|BIST2|temp [2] $end
+$var wire 1 3% horizontalBLK|BIST2|temp [1] $end
+$var wire 1 4% horizontalBLK|BIST2|temp [0] $end
+$var wire 1 5% horizontalBLK|BIST3|temp [6] $end
+$var wire 1 6% horizontalBLK|BIST3|temp [5] $end
+$var wire 1 7% horizontalBLK|BIST3|temp [4] $end
+$var wire 1 8% horizontalBLK|BIST3|temp [3] $end
+$var wire 1 9% horizontalBLK|BIST3|temp [2] $end
+$var wire 1 :% horizontalBLK|BIST3|temp [1] $end
+$var wire 1 ;% horizontalBLK|BIST3|temp [0] $end
+$var wire 1 <% horizontalBLK|BIST4|temp [8] $end
+$var wire 1 =% horizontalBLK|BIST4|temp [7] $end
+$var wire 1 >% horizontalBLK|BIST4|temp [6] $end
+$var wire 1 ?% horizontalBLK|BIST4|temp [5] $end
+$var wire 1 @% horizontalBLK|BIST4|temp [4] $end
+$var wire 1 A% horizontalBLK|BIST4|temp [3] $end
+$var wire 1 B% horizontalBLK|BIST4|temp [2] $end
+$var wire 1 C% horizontalBLK|BIST4|temp [1] $end
+$var wire 1 D% horizontalBLK|BIST4|temp [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0D"
+0E"
+1F"
+0G"
+0H"
+1I"
+0J"
+1K"
+0L"
+0M"
+0N"
+0O"
+0P"
+1Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+1W"
+0X"
+1Y"
+0Z"
+0["
+0\"
+1]"
+0^"
+0_"
+0`"
+1a"
+0b"
+1c"
+0d"
+0e"
+0f"
+1g"
+0h"
+0i"
+0j"
+0k"
+0l"
+1m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+1y"
+0z"
+0{"
+0|"
+0}"
+1~"
+0!#
+0"#
+0##
+0$#
+0%#
+1&#
+0'#
+0(#
+0)#
+0*#
+0+#
+1,#
+0-#
+0.#
+0/#
+00#
+01#
+12#
+03#
+04#
+05#
+06#
+07#
+18#
+09#
+0:#
+0;#
+1<#
+1=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+1D#
+0E#
+1F#
+0G#
+1H#
+0I#
+1J#
+0K#
+0L#
+0M#
+1N#
+0O#
+0P#
+0Q#
+1R#
+0S#
+0T#
+1U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+0]#
+0^#
+0_#
+0`#
+0a#
+0b#
+0c#
+1d#
+0e#
+0f#
+1g#
+0h#
+1i#
+0j#
+1k#
+0l#
+0m#
+0n#
+0o#
+0p#
+1q#
+0r#
+0s#
+0t#
+1u#
+0v#
+0w#
+0x#
+0y#
+0z#
+1{#
+0|#
+0}#
+0~#
+1!$
+0"$
+0#$
+0$$
+0%$
+0&$
+0'$
+0($
+0)$
+0*$
+0+$
+0,$
+0-$
+0.$
+0/$
+00$
+01$
+02$
+03$
+04$
+05$
+16$
+17$
+08$
+09$
+0:$
+0;$
+0<$
+0M$
+0L$
+0K$
+0J$
+0I$
+0H$
+0G$
+0F$
+0E$
+0D$
+0C$
+0B$
+0A$
+0@$
+0?$
+0>$
+0=$
+0b$
+0a$
+0`$
+0_$
+0^$
+0]$
+0\$
+0[$
+0Z$
+0Y$
+0X$
+0W$
+0V$
+0U$
+0T$
+0S$
+0R$
+0Q$
+0P$
+0O$
+0N$
+0q$
+0p$
+0o$
+0n$
+0m$
+0l$
+0k$
+0j$
+0i$
+0h$
+0g$
+0f$
+0e$
+0d$
+0c$
+0~$
+0}$
+0|$
+0{$
+0z$
+0y$
+0x$
+0w$
+0v$
+0u$
+0t$
+0s$
+0r$
+0(%
+0'%
+0&%
+0%%
+0$%
+0#%
+0"%
+0!%
+04%
+03%
+02%
+01%
+00%
+0/%
+0.%
+0-%
+0,%
+0+%
+0*%
+0)%
+0;%
+0:%
+09%
+08%
+07%
+06%
+05%
+0D%
+0C%
+0B%
+0A%
+0@%
+0?%
+0>%
+0=%
+0<%
+0#
+1$
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+01
+12
+x3
+04
+15
+x6
+17
+18
+19
+0:
+0;
+0<
+0=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+1J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+1[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+1c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+1#!
+1$!
+0%!
+0&!
+0'!
+1(!
+0)!
+1*!
+0+!
+0,!
+0-!
+0.!
+1/!
+00!
+01!
+02!
+03!
+04!
+15!
+06!
+07!
+08!
+19!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+1@!
+0A!
+0B!
+0C!
+0D!
+1E!
+0F!
+0G!
+0H!
+0I!
+0J!
+1K!
+0L!
+0M!
+1N!
+0O!
+1P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+1V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+1^!
+0_!
+1`!
+0a!
+1b!
+0c!
+0d!
+0e!
+0f!
+0g!
+1h!
+1i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+1q!
+0r!
+0s!
+0t!
+0u!
+0v!
+1w!
+0x!
+1y!
+0z!
+1{!
+0|!
+0}!
+0~!
+1!"
+0""
+1#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+1,"
+0-"
+0."
+0/"
+00"
+01"
+12"
+03"
+14"
+05"
+06"
+07"
+08"
+19"
+0:"
+1;"
+0<"
+0="
+0>"
+0?"
+1@"
+0A"
+0B"
+0C"
+$end
+#10000
+1!
+1%!
+1&!
+03
+#20000
+0"
+0!
+0(!
+0%!
+0&!
+13
+#30000
+1!
+1%!
+1&!
+03
+1(%
+1M$
+1]!
+0h!
+18"
+0@
+1o!
+0i!
+1a#
+0c
+1p!
+1b#
+#40000
+0!
+0%!
+0&!
+13
+#50000
+1"
+1!
+1(!
+1%!
+1&!
+03
+0M$
+0(%
+08"
+1@
+0]!
+1h!
+0a#
+1c
+0o!
+1i!
+0b#
+0p!
+#60000
+0!
+0%!
+0&!
+13
+#70000
+1!
+1%!
+1&!
+03
+#80000
+0!
+0%!
+0&!
+13
+#90000
+1!
+1%!
+1&!
+03
+#100000
+0!
+0%!
+0&!
+13
+#110000
+1!
+1%!
+1&!
+03
+#120000
+0!
+0%!
+0&!
+13
+#130000
+1!
+1%!
+1&!
+03
+#140000
+0!
+0%!
+0&!
+13
+#150000
+1!
+1%!
+1&!
+03
+#160000
+0!
+0%!
+0&!
+13
+#170000
+1!
+1%!
+1&!
+03
+#180000
+0!
+0%!
+0&!
+13
+#190000
+1!
+1%!
+1&!
+03
+#200000
+0!
+0%!
+0&!
+13
+#210000
+1!
+1%!
+1&!
+03
+#220000
+0!
+0%!
+0&!
+13
+#230000
+1!
+1%!
+1&!
+03
+#240000
+0!
+0%!
+0&!
+13
+#250000
+1!
+1%!
+1&!
+03
+#260000
+0!
+0%!
+0&!
+13
+#270000
+1!
+1%!
+1&!
+03
+#280000
+0!
+0%!
+0&!
+13
+#290000
+1!
+1%!
+1&!
+03
+#300000
+0!
+0%!
+0&!
+13
+#310000
+1!
+1%!
+1&!
+03
+#320000
+0!
+0%!
+0&!
+13
+#330000
+1!
+1%!
+1&!
+03
+#340000
+0!
+0%!
+0&!
+13
+#350000
+1!
+1%!
+1&!
+03
+#360000
+0!
+0%!
+0&!
+13
+#370000
+1!
+1%!
+1&!
+03
+#380000
+0!
+0%!
+0&!
+13
+#390000
+1!
+1%!
+1&!
+03
+#400000
+0!
+0%!
+0&!
+13
+#410000
+1!
+1%!
+1&!
+03
+#420000
+0!
+0%!
+0&!
+13
+#430000
+1!
+1%!
+1&!
+03
+#440000
+0!
+0%!
+0&!
+13
+#450000
+1!
+1%!
+1&!
+03
+#460000
+0!
+0%!
+0&!
+13
+#470000
+1!
+1%!
+1&!
+03
+#480000
+0!
+0%!
+0&!
+13
+#490000
+1!
+1%!
+1&!
+03
+#500000
+0!
+0%!
+0&!
+13
+#510000
+1!
+1%!
+1&!
+03
+#520000
+0!
+0%!
+0&!
+13
+#530000
+1!
+1%!
+1&!
+03
+#540000
+0!
+0%!
+0&!
+13
+#550000
+1!
+1%!
+1&!
+03
+#560000
+0!
+0%!
+0&!
+13
+#570000
+1!
+1%!
+1&!
+03
+#580000
+0!
+0%!
+0&!
+13
+#590000
+1!
+1%!
+1&!
+03
+#600000
+0!
+0%!
+0&!
+13
+#610000
+1!
+1%!
+1&!
+03
+#620000
+0!
+0%!
+0&!
+13
+#630000
+1!
+1%!
+1&!
+03
+#640000
+0!
+0%!
+0&!
+13
+#650000
+1!
+1%!
+1&!
+03
+#660000
+0!
+0%!
+0&!
+13
+#670000
+1!
+1%!
+1&!
+03
+#680000
+0!
+0%!
+0&!
+13
+#690000
+1!
+1%!
+1&!
+03
+#700000
+0!
+0%!
+0&!
+13
+#710000
+1!
+1%!
+1&!
+03
+#720000
+0!
+0%!
+0&!
+13
+#730000
+1!
+1%!
+1&!
+03
+#740000
+0!
+0%!
+0&!
+13
+#750000
+1!
+1%!
+1&!
+03
+#760000
+0!
+0%!
+0&!
+13
+#770000
+1!
+1%!
+1&!
+03
+#780000
+0!
+0%!
+0&!
+13
+#790000
+1!
+1%!
+1&!
+03
+#800000
+0!
+0%!
+0&!
+13
+#810000
+1!
+1%!
+1&!
+03
+#820000
+0!
+0%!
+0&!
+13
+#830000
+1!
+1%!
+1&!
+03
+#840000
+0!
+0%!
+0&!
+13
+#850000
+1!
+1%!
+1&!
+03
+#860000
+0!
+0%!
+0&!
+13
+#870000
+1!
+1%!
+1&!
+03
+#880000
+0!
+0%!
+0&!
+13
+#890000
+1!
+1%!
+1&!
+03
+#900000
+0!
+0%!
+0&!
+13
+#910000
+1!
+1%!
+1&!
+03
+#920000
+0!
+0%!
+0&!
+13
+#930000
+1!
+1%!
+1&!
+03
+#940000
+0!
+0%!
+0&!
+13
+#950000
+1!
+1%!
+1&!
+03
+#960000
+0!
+0%!
+0&!
+13
+#970000
+1!
+1%!
+1&!
+03
+#980000
+0!
+0%!
+0&!
+13
+#990000
+1!
+1%!
+1&!
+03
+#1000000

@@ -1,0 +1,11 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+----------------------------------------------------------------------------------------------------
+ENTITY controlDibujo IS
+	PORT		( 	  clk	               :	IN 	STD_LOGIC;
+					  rst	               :	IN 	STD_LOGIC;
+					  v_video_on	   	:	OUT	STD_LOGIC;
+					  v_video_on	   	:	OUT	STD_LOGIC;
+					  ); 
+	END ENTITY;
+-----------------------------------------------------------------------------------------------------

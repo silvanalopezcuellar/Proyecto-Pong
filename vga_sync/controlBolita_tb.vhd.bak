@@ -1,0 +1,80 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------------------------------------------------------------------------
+ENTITY controlBolita_tb IS
+	GENERIC	GENERIC	(	Nv						:	INTEGER  := 11);
+END ENTITY controlBolita_tb;
+----------------------------------
+ARCHITECTURE testbench2 OF controlBolita_tb IS
+	
+SIGNAL  clk	               :	IN 	STD_LOGIC;
+SIGNAL  rst	               :	IN 	STD_LOGIC;
+SIGNAL  InicioBolita			:  IN		STD_LOGIC;
+SIGNAL  LimSupBarraR			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimInfBarraR			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimSupBarraL			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimInfBarraL			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimiteBolaUp			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimiteBolaDown		:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimiteBolaRight		:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  LimiteBolaLeft		:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+SIGNAL  Bup		   			:	OUT	INTEGER:=245;
+SIGNAL  Bdown  		   	:	OUT 	INTEGER:=235;
+SIGNAL  Bright					:	OUT 	INTEGER:=648;
+SIGNAL  Bleft					:	OUT 	INTEGER:=632;
+SIGNAL  Pplayer1				:	OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL  Pplayer2				:	OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+	
+BEGIN
+	-------------- CLK GENERATION-------------------
+	ClkGeneration: PROCESS
+	BEGIN
+		clk <= '0'; 
+		WAIT FOR 10 ns;
+		clk <= '1';
+		WAIT FOR 10 ns;
+	END PROCESS ClkGeneration;
+	------------------------------------------------
+	rstGeneration: PROCESS
+	BEGIN		
+		------- RESET GENERATION
+		rst		<= '1' AFTER 10 ns,
+						'0' AFTER 30 ns;
+		WAIT FOR 100000 ms;
+	END PROCESS rstGeneration;
+	
+	inGeneration: PROCESS
+	BEGIN
+	
+		inicioBolita <= '1' AFTER 20 ns;
+		JoyStick1	<= "00" AFTER 500 us,
+							"11" AFTER 30 ms,
+							"00" AFTER 60 ms;
+		JoyStick1	<= "11" AFTER 500 us,
+							"00" AFTER 30 ms,
+							"11" AFTER 60 ms;
+		
+		MaxTickFrame <= '0';
+		WAIT FOR 1 ms;
+		MaxTickFrame <= '1';
+		WAIT FOR 20 ns;
+		
+		
+	END PROCESS inGeneration;
+	
+controlDibujoBLK_tb: ENTITY work.controlDibujo 
+	GENERIC MAP	( 	  Nv => Nv,
+						  Nh => Nh)
+	PORT	  MAP ( 	  clk => clk,
+						  rst => rst,
+						  video_on => video_on,
+						  MaxTickFrame => MaxTickFrame,
+						  JoyStick1 => JoyStick1,
+						  JoyStick2 => JoyStick2,
+						  countv => countv,
+						  counth => counth,
+						  pixel  => pixel);
+	--------------------------------------------------					  
+END ARCHITECTURE testbench1;	

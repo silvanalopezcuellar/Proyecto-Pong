@@ -1,0 +1,36 @@
+
+State Machine - |vga_sync|vertical:verticalBLK|controlvertical:DUT|pr_state
+Name pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 
+pr_state.dos 0 0 1 1 
+pr_state.tres 0 1 0 1 
+pr_state.cuatro 1 0 0 1 
+
+State Machine - |vga_sync|horizontal:horizontalBLK|controlhorizontal:DUT|pr_state
+Name pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 
+pr_state.dos 0 0 1 1 
+pr_state.tres 0 1 0 1 
+pr_state.cuatro 1 0 0 1 
+
+State Machine - |vga_sync|controlDibujo:controlDibujoBLK|ControlBolita:BolitaBLK|pr_state
+Name pr_state.lose pr_state.liminf pr_state.limsup pr_state.rbar pr_state.lbar pr_state.normal pr_state.inicio 
+pr_state.inicio 0 0 0 0 0 0 0 
+pr_state.normal 0 0 0 0 0 1 1 
+pr_state.lbar 0 0 0 0 1 0 1 
+pr_state.rbar 0 0 0 1 0 0 1 
+pr_state.limsup 0 0 1 0 0 0 1 
+pr_state.liminf 0 1 0 0 0 0 1 
+pr_state.lose 1 0 0 0 0 0 1 
+
+State Machine - |vga_sync|controlDibujo:controlDibujoBLK|ControlBarraR:BarraRBLK|pr_state
+Name pr_state.down pr_state.up pr_state.stay 
+pr_state.stay 0 0 0 
+pr_state.up 0 1 1 
+pr_state.down 1 0 1 
+
+State Machine - |vga_sync|controlDibujo:controlDibujoBLK|ControlBarraL:BarraLBLK|pr_state
+Name pr_state.up pr_state.down pr_state.stay 
+pr_state.stay 0 0 0 
+pr_state.down 0 1 1 
+pr_state.up 1 0 1 

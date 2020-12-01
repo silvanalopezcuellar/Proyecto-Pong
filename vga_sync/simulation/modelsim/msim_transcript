@@ -1,0 +1,338 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do vga_sync_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArch of cont
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bin_to_sseg
+# -- Compiling architecture behaviour of bin_to_sseg
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading entity ControlBarraL
+# -- Loading entity ControlBarraR
+# -- Loading entity ControlBolita
+# vcom -93 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity vga_sync
+# -- Compiling architecture vga_syncARCH of vga_sync
+# -- Loading package std_logic_arith
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# ** Warning: C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd(88): Cannot associate port "linea" of mode OUT with port "linea2" of mode BUFFER.
+# -- Loading entity vertical
+# -- Loading entity bin_to_sseg
+# 
+cd {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync}
+# reading C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bin_to_sseg
+# -- Compiling architecture behaviour of bin_to_sseg
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArch of cont
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBarraR_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlBarraR_tb
+# -- Compiling architecture testbench2 of controlBarraR_tb
+# -- Loading entity ControlBarraR
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBolita_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlBolita_tb
+# -- Compiling architecture testbench2 of controlBolita_tb
+# -- Loading package std_logic_arith
+# -- Loading entity ControlBolita
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading entity ControlBarraL
+# -- Loading entity ControlBarraR
+# -- Loading entity ControlBolita
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo_tb
+# -- Compiling architecture testbench1 of controlDibujo_tb
+# -- Loading package std_logic_arith
+# -- Loading entity controlDibujo
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity vga_sync
+# -- Compiling architecture vga_syncARCH of vga_sync
+# -- Loading package std_logic_arith
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# -- Loading entity vertical
+# -- Loading entity bin_to_sseg
+vcom -reportprogress 300 -work work {C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity vga_sync_tb
+# -- Compiling architecture testbench of vga_sync_tb
+# -- Loading entity vga_sync
+vsim work.vga_sync
+# vsim work.vga_sync 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.vga_sync(vga_syncarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.controlbarral(bar)
+# Loading work.controlbarrar(bar)
+# Loading work.controlbolita(bola)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarch)
+# Loading work.conth(contharch)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+# Loading work.bin_to_sseg(behaviour)
+vsim work.vga_sync_tb
+# vsim work.vga_sync_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.vga_sync_tb(testbench)
+# Loading ieee.std_logic_arith(body)
+# Loading work.vga_sync(vga_syncarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.controlbarral(bar)
+# Loading work.controlbarrar(bar)
+# Loading work.controlbolita(bola)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarch)
+# Loading work.conth(contharch)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+# Loading work.bin_to_sseg(behaviour)
+add wave -position insertpoint sim:/vga_sync_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Usuario  Hostname: DESKTOP-HN9BTGS  ProcessID: 8724
+# 
+#           Attempting to use alternate WLF file "./wlft27yght".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft27yght
+# 
+run 65 ms

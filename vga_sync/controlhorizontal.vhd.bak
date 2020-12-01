@@ -1,0 +1,89 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+---------------------------------------------------------
+ENTITY horizontal IS
+   GENERIC	( Con1      		:			INTEGER  := 96;  
+				  N1					:			INTEGER  := 2;
+				  Con2      		:			INTEGER  := 1280;  
+				  N2					:			INTEGER  := 4; 
+				  Con3      		:			INTEGER  := 32;  
+				  N3					:			INTEGER  := 2;
+				  Con4      		:			INTEGER  := 192;  
+				  N4					:			INTEGER  := 3);
+	PORT(	clk						:	IN		STD_LOGIC;
+			rst						:	IN		STD_LOGIC;
+			h_video_on_out		   :	OUT	STD_LOGIC;
+			hsync_out		 		:	OUT	STD_LOGIC
+	);
+END ENTITY horizontal;
+---------------------------------------------------------
+ARCHITECTURE ARCH OF horizontal IS
+	SIGNAL	MaxTick1				:	STD_LOGIC;
+	SIGNAL	MaxTick2				:	STD_LOGIC;
+	SIGNAL	MaxTick3			:	STD_LOGIC;
+	SIGNAL	MaxTick4				:	STD_LOGIC;
+	SIGNAL	ena1			    	:	STD_LOGIC;
+	SIGNAL	ena2			    	:	STD_LOGIC;
+	SIGNAL	ena3			    	:	STD_LOGIC;
+	SIGNAL	ena4			    	:	STD_LOGIC;
+	SIGNAL	sync2			    	:	STD_LOGIC;
+	SIGNAL	sync1			    	:	STD_LOGIC;
+	SIGNAL	sync4			    	:	STD_LOGIC;
+	SIGNAL	sync3			    	:	STD_LOGIC;
+BEGIN
+
+	DUT: ENTITY work.controlhorizontal
+	PORT MAP(  clk	               =>	clk,
+				  rst	               =>	rst,
+				  cont1MaxTick	      => MaxTick1,
+				  cont2MaxTick	      => MaxTick2,
+				  cont3MaxTick	      => MaxTick3,
+				  cont4MaxTick	      => MaxTick4,
+				  ena_cont1		      => ena1,
+				  ena_cont2		      => ena2,
+				  ena_cont3		      => ena3,
+				  ena_cont4		      => ena4,
+				  syn_clr_cont1	   => sync1,
+				  syn_clr_cont2	   => sync2,
+				  syn_clr_cont3	   => sync3,
+				  syn_clr_cont4	   => sync4,
+				  h_video_on	  	   => h_video_on_out,
+				  hsync				   => hsync_out);
+				  
+	BIST: ENTITY work.cont1
+	GENERIC MAP( Con1      		=> Con1, 
+				  N1					=>	N1)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont1	=>	sync1,
+				  ena_cont1		   =>	ena1,
+				  cont1MaxTick	   =>	MaxTick1);
+			
+	BIST2: ENTITY work.cont2
+	GENERIC MAP( Con2      		=> Con2, 
+				  N2					=>	N2)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont2	=>	sync2,
+				  ena_cont2		   =>	ena2,
+				  cont2MaxTick	   =>	MaxTick2);
+				  
+	BIST3: ENTITY work.cont3
+	GENERIC MAP( Con3      		=> Con3, 
+				  N3					=>	N3)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont3	=>	sync3,
+				  ena_cont3		   =>	ena3,
+				  cont3MaxTick	   =>	MaxTick3);
+					
+	BIST4: ENTITY work.cont4
+	GENERIC MAP( Con4      		=> Con4, 
+				  N4					=>	N4)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont4	=>	sync4,
+				  ena_cont4		   =>	ena4,
+				  cont4MaxTick	   =>	MaxTick4);
+
+END ARCHITECTURE;

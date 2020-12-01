@@ -1,0 +1,74 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+-------------------------------
+ENTITY ControlBarraL IS
+	GENERIC	(	Nv						:	INTEGER  := 11);
+	PORT		( clk	               :	IN 	STD_LOGIC;
+				  rst	               :	IN 	STD_LOGIC;
+				  JoyStick1		      :	IN 	STD_LOGIC_VECTOR(1 DOWNTO 0);
+				  LimSupBarraL			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+				  LimInfBarraL			:	IN		STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+				  BarraInfL		   	:	OUT	INTEGER:=190;
+				  BarraSupL  		   :	OUT 	INTEGER:=290
+				  ); 
+END ENTITY;
+--------------------------------
+ARCHITECTURE bar OF ControlBarraL IS
+
+	TYPE state IS (up, down, stay);
+	SIGNAL pr_state, nx_state	:	state;
+	SIGNAL SupL	: INTEGER:=290;
+	SIGNAL InfL	: INTEGER:=190;
+	
+BEGIN
+	BarraSupL	<= SupL;
+	BarraInfL	<= InfL;
+	
+	sequential: PROCESS(rst, clk)
+	BEGIN
+		IF (rst = '1') THEN
+			pr_state	<=	stay;
+		ELSIF (rising_edge(clk)) THEN
+			pr_state	<=	nx_state;
+		END IF;
+		
+	END PROCESS sequential;
+	
+
+	
+	combinational: PROCESS(pr_state, JoyStick1, LimInfBarraL, LimSupBarraL)
+	BEGIN
+		CASE pr_state IS
+			WHEN up	=>
+				SupL	<=	SupL + 1;
+				InfL 	<= InfL + 1;
+				IF ((LimInfBarraL >= "00000000000") AND (LimSupBarraL < "00111011111") AND (JoyStick1="00")) THEN
+				nx_state 			<= up;
+				ELSIF ((LimInfBarraL > "00000000000") AND (LimSupBarraL <= "00111011111") AND (JoyStick1="11")) THEN
+				nx_state				<= down;
+				ELSE 
+				nx_state 			<= stay;
+				END IF;
+			
+			WHEN stay	=>
+				IF ((LimInfBarraL >= "00000000000") AND (LimSupBarraL < "00111011111") AND (JoyStick1="00")) THEN
+				nx_state 			<= up;
+				ELSIF ((LimInfBarraL > "00000000000") AND (LimSupBarraL <= "00111011111") AND (JoyStick1="11")) THEN
+				nx_state				<= down;
+				ELSE 
+				nx_state 			<= stay;
+				END IF;
+				
+			WHEN down	=>
+				SupL	<=	SupL - 1;
+				InfL 	<= InfL - 1;
+				IF ((LimInfBarraL >= "00000000000") AND (LimSupBarraL < "00111011111") AND (JoyStick1="00")) THEN
+				nx_state 			<= up;
+				ELSIF ((LimInfBarraL > "00000000000") AND (LimSupBarraL <= "00111011111") AND (JoyStick1="11")) THEN
+				nx_state				<= down;
+				ELSE 
+				nx_state 			<= stay;
+				END IF;
+		END CASE;
+	END PROCESS combinational;
+END ARCHITECTURE;

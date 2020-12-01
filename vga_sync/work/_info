@@ -1,0 +1,648 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Digitales\Diseno en FPGA\vga_sync
+Ebin_to_sseg
+Z1 w1553484232
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Usuario\Documents\Digitales\Diseno en FPGA\vga_sync
+Z6 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd
+Z7 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd
+l0
+L5
+V`coEB:ofElfOO571=F7z>1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1554384890.628000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd|
+Z11 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/bin_to_sseg.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+!s100 U?2JNk3KajRBE29^YaHFJ2
+!i10b 1
+Abehaviour
+R2
+R3
+R4
+Z14 DEx4 work 11 bin_to_sseg 0 22 `coEB:ofElfOO571=F7z>1
+l13
+L12
+VW>b@2?O@<kkX0`U`^N`jY1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 D^Y_`A1JJWCLk_0[LF1gL1
+!i10b 1
+Econt
+Z15 w1553484234
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd
+Z17 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd
+l0
+L5
+VTeW^4EP7;H;MBbo5<YjfC3
+R8
+32
+Z18 !s108 1554384890.806000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd|
+Z20 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/cont.vhd|
+R12
+R13
+!s100 G69R=68cdzJ9@2cc2g6a=1
+!i10b 1
+Acontarch
+R2
+R3
+R4
+Z21 DEx4 work 4 cont 0 22 TeW^4EP7;H;MBbo5<YjfC3
+l19
+L17
+V3CTb[^n3<b<^_^5afKddW2
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!s100 U[V]De3NVe7LIFh0ff>D93
+!i10b 1
+Econth
+R15
+R2
+R3
+R4
+R5
+Z22 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd
+Z23 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd
+l0
+L5
+V7`RC3c;mJiMZa@8cjS[m>2
+R8
+32
+Z24 !s108 1554384890.960000
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd|
+Z26 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/conth.vhd|
+R12
+R13
+!s100 QaBc?e2?0b<CZfA@cZ2VL0
+!i10b 1
+Acontharch
+R2
+R3
+R4
+Z27 DEx4 work 5 conth 0 22 7`RC3c;mJiMZa@8cjS[m>2
+l21
+L19
+VjX2LDCG8>R704:clWz=kh2
+R8
+32
+R24
+R25
+R26
+R12
+R13
+!s100 TfZI?8Hj9;9H@=5WJCOEG0
+!i10b 1
+Econtrolbarral
+R15
+R3
+R4
+R5
+Z28 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd
+Z29 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd
+l0
+L4
+V1c9jaY2QQ871EE_MQ06W>3
+R8
+32
+Z30 !s108 1554384891.129000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd|
+Z32 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraL.vhd|
+R12
+R13
+!s100 <eUNM27@eP6i>N<^l3al81
+!i10b 1
+Abar
+R3
+R4
+Z33 DEx4 work 13 controlbarral 0 22 1c9jaY2QQ871EE_MQ06W>3
+l23
+L16
+VjU9a;hzBIQ`QPQ8]?@I712
+R8
+32
+R30
+R31
+R32
+R12
+R13
+!s100 gK`TzLWo9aMXdOiUkk6dY1
+!i10b 1
+Econtrolbarrar
+Z34 w1554354270
+R3
+R4
+R5
+Z35 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd
+Z36 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd
+l0
+L4
+VZ84[G4PUz8T5S0i973Ql70
+R8
+32
+Z37 !s108 1554384891.276000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd|
+Z39 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBarraR.vhd|
+R12
+R13
+!s100 CCg;33iA?aPeGXZf8e?R=3
+!i10b 1
+Abar
+R3
+R4
+Z40 DEx4 work 13 controlbarrar 0 22 Z84[G4PUz8T5S0i973Ql70
+l23
+L17
+V>;<APbbgQhMSf<JVX1gF>3
+R8
+32
+R37
+R38
+R39
+R12
+R13
+!s100 <EVNX;fj^Uek05c]Go]A]2
+!i10b 1
+Econtrolbarrar_tb
+Z41 w1554355937
+R2
+R3
+R4
+R5
+Z42 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBarraR_tb.vhd
+Z43 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBarraR_tb.vhd
+l0
+L5
+VUbK:ADR?KcfD>BFFdD0Yf2
+R8
+32
+Z44 !s108 1554384891.430000
+Z45 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBarraR_tb.vhd|
+Z46 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBarraR_tb.vhd|
+R12
+R13
+!s100 7oRAA?9aE@TNhhXkE`mI82
+!i10b 1
+Atestbench2
+R40
+R2
+R3
+R4
+DEx4 work 16 controlbarrar_tb 0 22 UbK:ADR?KcfD>BFFdD0Yf2
+l20
+L9
+VA=??k>0LbK@hRM@JccF_D1
+R8
+32
+R44
+R45
+R46
+R12
+R13
+!s100 OOVPN<Na_;W`F;3RmX_4J0
+!i10b 1
+Econtrolbolita
+Z47 w1554377110
+R2
+Z48 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R3
+R4
+R5
+Z49 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd
+Z50 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd
+l0
+L6
+V>bl@AC3RNPR]EQ7mJ9>gb3
+R8
+32
+Z51 !s108 1554384891.592000
+Z52 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd|
+Z53 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/ControlBolita.vhd|
+R12
+R13
+!s100 X>K=EjeD>Sk[dBlRdejlT0
+!i10b 1
+Abola
+R2
+R48
+R3
+R4
+Z54 DEx4 work 13 controlbolita 0 22 >bl@AC3RNPR]EQ7mJ9>gb3
+l42
+L29
+VQ4Gj5m;YmoI=??I3RX<Ll3
+R8
+32
+R51
+R52
+R53
+R12
+R13
+!s100 h6;5hAcWVhVZiVbMeh43O1
+!i10b 1
+Econtrolbolita_tb
+Z55 w1554365723
+R2
+R3
+R4
+R5
+Z56 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBolita_tb.vhd
+Z57 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBolita_tb.vhd
+l0
+L5
+VdXBK80A72znUk`Ig1QNm43
+R8
+32
+Z58 !s108 1554384891.777000
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBolita_tb.vhd|
+Z60 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlBolita_tb.vhd|
+R12
+R13
+!s100 KW^?C>n`bY?ezk<[C2n2z3
+!i10b 1
+Atestbench2
+R48
+R54
+R2
+R3
+R4
+DEx4 work 16 controlbolita_tb 0 22 dXBK80A72znUk`Ig1QNm43
+l31
+L9
+VFL`]0N8LIXjPAbO5k_KG>2
+R8
+32
+R58
+R59
+R60
+R12
+R13
+!s100 2Hb@QEWF;0`zIL;284SWP2
+!i10b 1
+Econtroldibujo
+Z61 w1554381759
+R2
+R48
+R3
+R4
+R5
+Z62 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd
+Z63 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd
+l0
+L6
+VP3YHV9b>kEIR6gKMm5MNR1
+R8
+32
+Z64 !s108 1554384891.962000
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd|
+Z66 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo.vhd|
+R12
+R13
+!s100 8Z3@jAXYMC5j<dfB2CdnW2
+!i10b 1
+Acontroldibujoarch
+R54
+R40
+R33
+R2
+R48
+R3
+R4
+Z67 DEx4 work 13 controldibujo 0 22 P3YHV9b>kEIR6gKMm5MNR1
+l57
+L23
+V7I^E9eKT6GgCmmB7`4B5=1
+R8
+32
+R64
+R65
+R66
+R12
+R13
+!s100 SV7l]RU3RE:N2C_DLL0ne3
+!i10b 1
+Econtroldibujo_tb
+Z68 w1554383345
+R2
+R3
+R4
+R5
+Z69 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo_tb.vhd
+Z70 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo_tb.vhd
+l0
+L5
+VIX6k78mhQzOKNXmNLPTH[0
+R8
+32
+Z71 !s108 1554384892.131000
+Z72 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo_tb.vhd|
+Z73 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlDibujo_tb.vhd|
+R12
+R13
+!s100 zU;SBbbA<C;4b6No_dATF0
+!i10b 1
+Atestbench1
+R48
+R67
+R2
+R3
+R4
+DEx4 work 16 controldibujo_tb 0 22 IX6k78mhQzOKNXmNLPTH[0
+l23
+L10
+VSfT>dTLNRORUlXY^@N^XM0
+R8
+32
+R71
+R72
+R73
+R12
+R13
+!s100 z[M0]6hCDUZ:`<K<3IObZ1
+!i10b 1
+Econtrolhorizontal
+Z74 w1553484236
+R3
+R4
+R5
+Z75 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd
+Z76 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd
+l0
+L4
+Vb`4M3A99RgzMBffAh]k?e2
+R8
+32
+Z77 !s108 1554384892.310000
+Z78 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd|
+Z79 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlhorizontal.vhd|
+R12
+R13
+!s100 ]9fCfkc]>8HNbnTQdWLE31
+!i10b 1
+Aonehot
+R3
+R4
+Z80 DEx4 work 17 controlhorizontal 0 22 b`4M3A99RgzMBffAh]k?e2
+l28
+L24
+V;G0k`Mf]D_CRQG7lPQ:C02
+R8
+32
+R77
+R78
+R79
+R12
+R13
+!s100 0?74jY4G[KG:NhKZWCNm01
+!i10b 1
+Econtrolvertical
+R74
+R3
+R4
+R5
+Z81 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd
+Z82 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd
+l0
+L4
+V]Li@Z1bzzIHIZahf^N7dl3
+R8
+32
+Z83 !s108 1554384892.464000
+Z84 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd|
+Z85 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/controlvertical.vhd|
+R12
+R13
+!s100 CL1C=66a=M46S5JTD]k6Z3
+!i10b 1
+Aonehot
+R3
+R4
+Z86 DEx4 work 15 controlvertical 0 22 ]Li@Z1bzzIHIZahf^N7dl3
+l28
+L24
+VlaGUjiUZ0]QfUKLS3=JXB1
+R8
+32
+R83
+R84
+R85
+R12
+R13
+!s100 PVJ`mTAWWa`i2cYgm=;RK1
+!i10b 1
+Econtv
+R74
+R2
+R3
+R4
+R5
+Z87 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd
+Z88 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd
+l0
+L5
+V^F8:SC?1an=Oh=AB5^n_;0
+R8
+32
+Z89 !s108 1554384892.611000
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd|
+Z91 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/contv.vhd|
+R12
+R13
+!s100 ^4E[D3RCOT>kjaoMW<ZLC1
+!i10b 1
+Acontvarch
+R2
+R3
+R4
+Z92 DEx4 work 5 contv 0 22 ^F8:SC?1an=Oh=AB5^n_;0
+l21
+L19
+VWlXnz4^8`<liH]Wof9XdW1
+R8
+32
+R89
+R90
+R91
+R12
+R13
+!s100 fP>UD:>@RFLfHb0a?a_=@3
+!i10b 1
+Ehorizontal
+Z93 w1553484238
+R3
+R4
+R5
+Z94 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd
+Z95 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd
+l0
+L4
+VV][RS6TD@5?8]kkz<hkWh1
+R8
+32
+Z96 !s108 1554384892.780000
+Z97 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd|
+Z98 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/horizontal.vhd|
+R12
+R13
+!s100 J>fiCHk4k>Nhi[R_SVN3W0
+!i10b 1
+Aarch
+R27
+R2
+R21
+R80
+R3
+R4
+Z99 DEx4 work 10 horizontal 0 22 V][RS6TD@5?8]kkz<hkWh1
+l43
+L26
+VbiSLMU^kZeOc5V7BaU9:g2
+R8
+32
+R96
+R97
+R98
+R12
+R13
+!s100 Y?LNK]XHZY8cjJ3;mDnB30
+!i10b 1
+Evertical
+R93
+R3
+R4
+R5
+Z100 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd
+Z101 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd
+l0
+L4
+VLZ7gn_HJknG_[K<_bP]]P1
+R8
+32
+Z102 !s108 1554384892.965000
+Z103 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd|
+Z104 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vertical.vhd|
+R12
+R13
+!s100 fFA;AKeN>TY_O7iO2[GD?1
+!i10b 1
+Aarch
+R92
+R2
+R21
+R86
+R3
+R4
+Z105 DEx4 work 8 vertical 0 22 LZ7gn_HJknG_[K<_bP]]P1
+l40
+L24
+Vc?RZM_SVTKjAOLRN@Eag[2
+R8
+32
+R102
+R103
+R104
+R12
+R13
+!s100 XA?XQKIX<:dNC=hPdH9i51
+!i10b 1
+Evga_sync
+R93
+R2
+R3
+R4
+R5
+Z106 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd
+Z107 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd
+l0
+L5
+V:]?Z;HQMMC>D9OWm`bYil1
+R8
+32
+Z108 !s108 1554384893.134000
+Z109 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd|
+Z110 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync.vhd|
+R12
+R13
+!s100 knd;i>WCZXjQOCL]M;95?3
+!i10b 1
+Avga_syncarch
+R14
+R105
+R99
+R48
+R67
+R2
+R3
+R4
+Z111 DEx4 work 8 vga_sync 0 22 :]?Z;HQMMC>D9OWm`bYil1
+l49
+L41
+VJZ2;g8eJKJXJczl85Camm0
+!s100 o[DVVSI0=QITYGaOG?3T^0
+R8
+32
+R108
+R109
+R110
+R12
+R13
+!i10b 1
+Evga_sync_tb
+Z112 w1554384749
+R2
+R3
+R4
+R5
+Z113 8C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync_tb.vhd
+Z114 FC:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync_tb.vhd
+l0
+L5
+V5gjTFNR3^CSU98d_W3=4N1
+!s100 VjS8e7gBoEDR1WlnBZC@?0
+R8
+32
+!i10b 1
+Z115 !s108 1554384893.313000
+Z116 !s90 -reportprogress|300|-work|work|C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync_tb.vhd|
+Z117 !s107 C:/Users/Usuario/Documents/Digitales/Diseno en FPGA/vga_sync/vga_sync_tb.vhd|
+R12
+R13
+Atestbench
+R111
+R2
+R3
+R4
+Z118 DEx4 work 11 vga_sync_tb 0 22 5gjTFNR3^CSU98d_W3=4N1
+l39
+L24
+Vc`Bc0PFd@dYLca<eDMH=01
+!s100 NZ1=z>7>eCLY0kf6__[bK1
+R8
+32
+!i10b 1
+R115
+R116
+R117
+R12
+R13

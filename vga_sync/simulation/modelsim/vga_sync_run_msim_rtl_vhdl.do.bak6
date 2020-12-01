@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/controlvertical.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/controlhorizontal.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont8.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont7.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont5.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont4.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont3.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont2.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont1.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/controlDibujo.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/cont6.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/vertical.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/horizontal.vhd}
+vcom -93 -work work {C:/Users/estudiante/Downloads/vga_sync/vga_sync.vhd}
+

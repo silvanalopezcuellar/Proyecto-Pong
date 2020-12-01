@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\estudiante\Downloads\vga_sync\simulation\qsim
+vvga_sync
+Z1 IBc?^GZKe@97Ld0O5fh9B@2
+Z2 V2cTL=4O<z3_AV;D^zgZ9R0
+Z3 dC:\Users\estudiante\Downloads\vga_sync\simulation\qsim
+Z4 w1553373895
+Z5 8vga_sync.vo
+Z6 Fvga_sync.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 hYABZGfiPlJ;4N4eTfSzT0
+!s85 0
+Z10 !s108 1553373899.268000
+Z11 !s107 vga_sync.vo|
+Z12 !s90 -work|work|vga_sync.vo|
+!s101 -O0
+vvga_sync_vlg_check_tst
+!i10b 1
+!s100 G27]Bj@4;OPRzf;_b^8mA3
+IDNTzX475f??MN7Dl<XL]f3
+V1`KhPM3@oi1OMg;6b?]de2
+R3
+Z13 w1553373894
+Z14 8vga_sync.vt
+Z15 Fvga_sync.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1553373899.963000
+Z17 !s107 vga_sync.vt|
+Z18 !s90 -work|work|vga_sync.vt|
+!s101 -O0
+R8
+vvga_sync_vlg_sample_tst
+!i10b 1
+!s100 :3VV6GmM5=?PDH0;>@QmX1
+ILKkYRP9Z@f@cPEXTU2e8C2
+VWR7cYcIn8l6C035E8b@YS2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vvga_sync_vlg_vec_tst
+!i10b 1
+!s100 9zHkT7W8aoa392AYJnTJJ2
+I_daH_RfTM]VTl_3KXljBi2
+V@g5bAf7;4^:2GD;G<ObTV1
+R3
+R13
+R14
+R15
+L0 459
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

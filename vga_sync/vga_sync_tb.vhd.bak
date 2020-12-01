@@ -1,0 +1,54 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------------------------------------------------------------------------
+ENTITY vga_sync_tb IS
+	GENERIC	( 	Con5      		:			INTEGER  := 42240;  
+				  N5					:			INTEGER  := 5;
+				  Con6      		:			INTEGER  := 614400;  
+				  N6					:			INTEGER  := 6; 
+				  Con7      		:			INTEGER  := 12800;  
+				  N7					:			INTEGER  := 5;
+				  Con8      		:			INTEGER  := 2560;  
+				  N8					:			INTEGER  := 4;
+				  Con1      		:			INTEGER  := 96;  
+				  N1					:			INTEGER  := 2;
+				  Con2      		:			INTEGER  := 1280;  
+				  N2					:			INTEGER  := 4; 
+				  Con3      		:			INTEGER  := 32;  
+				  N3					:			INTEGER  := 2;
+				  Con4      		:			INTEGER  := 192;  
+				  N4					:			INTEGER  := 3);
+	END ENTITY vga_sync_tb;
+----------------------------------
+ARCHITECTURE testbench OF vga_sync_tb IS
+	SIGNAL  clk	               :	STD_LOGIC:= '0';
+	SIGNAL  rst	               :	STD_LOGIC:= '1';
+	SIGNAL  pixel					:	STD_LOGIC_VECTOR(11 DOWNTO 0);
+	SIGNAL  h_video_on_out		: 	STD_LOGIC;
+	SIGNAL  v_video_on_out		:	STD_LOGIC;
+	SIGNAL  vsync_out		 		:	STD_LOGIC;
+	SIGNAL  hsync_out		 		:	STD_LOGIC;
+
+	
+BEGIN
+	-------------- CLK GENERATION-------------------
+	ClkGeneration: PROCESS
+	BEGIN
+		clk <= '0'; 
+		WAIT FOR 10ns;
+		clk <= '1';
+		WAIT FOR 10ns;
+	END PROCESS ClkGeneration;
+	------------------------------------------------
+	testGeneration: PROCESS
+	BEGIN		
+		------- RESET GENERATION
+	rst <= '0' AFTER 90ns;
+	END PROCESS testGeneration;					
+	--------------------------------------------------					  
+END ARCHITECTURE testbench;	
